@@ -1,3 +1,7 @@
-:80 {
-    reverse_proxy https://docker-production-843f.up.railway.app
+docker-production-843f.up.railway.app {
+    # Automatically redirect HTTP to HTTPS
+    redir http://docker-production-843f.up.railway.app https://docker-production-843f.up.railway.app{uri}
+
+    # Reverse proxy to Home Assistant over HTTPS
+    reverse_proxy http://docker-production-843f.up.railway.app:8123
 }
