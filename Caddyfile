@@ -1,5 +1,8 @@
 :80 {
     reverse_proxy docker-production-843f.up.railway.app:8123 {
-        transport http
+        transport http {
+            retries 3
+            dial_timeout 30s
+        }
     }
 }
