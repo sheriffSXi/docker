@@ -1,5 +1,5 @@
 :80 {
-    reverse_proxy docker-production-843f.up.railway.app:80 {
+    reverse_proxy http:docker-production-843f.up.railway.app:80 {
         transport http {
             dial_timeout 20s
         }
