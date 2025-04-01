@@ -1,3 +1,5 @@
 :80 {
-    https://docker-production-843f.up.railway.app:8123
+    reverse_proxy docker-production-843f.up.railway.app:8123 {
+        transport http
+    }
 }
