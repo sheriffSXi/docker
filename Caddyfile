@@ -6,7 +6,7 @@ docker-production-843f.up.railway.app {
     reverse_proxy http://docker-production-843f.up.railway.app:8123
 
     # Enable automatic HTTPS (TLS) with optional email for notifications
-    tls youremail@example.com
+    tls 08arcane-moped@icloud.com
 
     # Enable HTTP/2 and HTTP/3 (both enabled by default with TLS)
     encode gzip
