@@ -5,12 +5,9 @@ docker-production-843f.up.railway.app {
     # Reverse proxy to Home Assistant over HTTP
     reverse_proxy http://docker-production-843f.up.railway.app:8123
 
-    # Enable automatic HTTPS (TLS)
+    # Enable automatic HTTPS (TLS) with optional email for notifications
     tls youremail@example.com
 
-    # Enable HTTP/2 and HTTP/3 (over HTTPS)
+    # Enable HTTP/2 and HTTP/3 (both enabled by default with TLS)
     encode gzip
-    transport http {
-        versions h2 h3
-    }
 }
