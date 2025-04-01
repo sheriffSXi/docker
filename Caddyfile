@@ -1,3 +1,7 @@
+{
+    debug
+}
+
 :80 {
     reverse_proxy docker-production-843f.up.railway.app:8123 {
         transport http {
